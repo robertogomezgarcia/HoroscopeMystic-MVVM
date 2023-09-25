@@ -9,15 +9,33 @@
         android:id="@+id/horoscopeFragment"
         android:name="com.example.horoscopemystic.ui.horoscope.HoroscopeFragment"
         android:label="fragment_horoscope"
-        tools:layout="@layout/fragment_horoscope" />
+        tools:layout="@layout/fragment_horoscope" >
+        <action
+            android:id="@+id/action_horoscopeFragment_to_horoscopeDetailActivity"
+            app:destination="@id/horoscopeDetailActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/horoscopeDetailActivity"
+        android:name="com.example.horoscopemystic.ui.detail.HoroscopeDetailActivity"
+        android:label="activity_horoscope_detail"
+        tools:layout="@layout/activity_horoscope_detail" >
+
+        <argument
+            android:name="type"
+            app:argType="com.example.horoscopemystic.domain.model.HoroscopeModel" />
+    </activity>
+
     <fragment
         android:id="@+id/luckFragment"
         android:name="com.example.horoscopemystic.ui.luck.LuckFragment"
         android:label="fragment_luck"
         tools:layout="@layout/fragment_luck" />
+
     <fragment
         android:id="@+id/palmistryFragment"
         android:name="com.example.horoscopemystic.ui.palmistry.PalmistryFragment"
         android:label="fragment_palmistry"
         tools:layout="@layout/fragment_palmistry" />
+
 </navigation>
