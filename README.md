@@ -17,7 +17,7 @@ Esta es una aplicación de horóscopo que te proporciona un mensaje personalizad
 - MVVM (Model-View-ViewModel)
 - Clean Architecture
 - View Binding
-- Testing (JUnit, Mockito)
+- Testing (JUnit, Mockk)
 
 ## Tutorial
 
